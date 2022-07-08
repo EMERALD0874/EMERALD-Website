@@ -6,7 +6,14 @@ import {
   Icon,
   IconRow,
 } from "./elements";
-import { FaDiscord, FaGithub, FaItchIo, FaSteam } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaGithub,
+  FaItchIo,
+  FaSteam,
+  FaTwitch,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Landing = () => {
   return (
@@ -29,6 +36,12 @@ const Landing = () => {
         </Icon>
         <Icon href="https://steamcommunity.com/id/EMERALD0874" target="_blank">
           <FaSteam />
+        </Icon>
+        <Icon href="https://twitch.tv/EMERALD0874" target="_blank">
+          <FaTwitch />
+        </Icon>
+        <Icon href="https://youtube.com/EMERALD0874" target="_blank">
+          <FaYoutube />
         </Icon>
       </IconRow>
     </Background>
