@@ -37,7 +37,7 @@ const Footer = () => {
     <>
       <Container>
         <Decoration>
-          Made {splash ? `with ${splash}` : ``} by EMERALD
+          Made{splash ? ` with ${splash}` : ``} by EMERALD
         </Decoration>
         <Copyright>© EMERALD, 2022. All rights reserved.</Copyright>
       </Container>
