@@ -1,9 +1,15 @@
 import * as React from "react";
+import HelmetComponent from "../components/Helmet";
 import TempLanding from "../components/TempLanding";
 import "./style.css";
 
 const IndexPage = () => {
-  return <TempLanding />;
+  return (
+    <>
+      <HelmetComponent />
+      <TempLanding />
+    </>
+  );
 };
 
 export default IndexPage;
