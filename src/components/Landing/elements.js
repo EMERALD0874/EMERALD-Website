@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import EmeraldBg from "../../images/emeraldbg.svg";
 
 export const Background = styled.div`
   // Background by SVGBackgrounds.com
@@ -9,16 +10,57 @@ export const Background = styled.div`
   background-size: cover;
 
   display: flex;
+  flex-direction: column;
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
+  padding-left: 64px;
+  padding-right: 64px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const EmeraldWrapper = styled.div`
+  width: 100%;
+  max-width: 400px;
+`;
+
+export const EmeraldSvg = styled.div`
+  width: 100%;
+  background-image: url(${EmeraldBg});
+  background-size: cover;
+  height: 0;
+  padding: 0; /* reset */
+  box-sizing: content-box;
+  padding-bottom: calc(100% * 4 / 5);
+`;
+
+export const IconRow = styled.li`
+  padding-top: 22px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 `;
 
-export const EmeraldSvg = styled.img`
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 100px;
-  padding-right: 100px;
-  object-fit: contain;
-  max-width: 100%;
+export const Icon = styled.a`
+  color: #ffdcfe;
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  height: 84px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #c69bff;
+  }
+
+  // make icons smaller at 600px screen width
+  @media screen and (max-width: 600px) {
+    font-size: 32px;
+    height: 52px;
+  }
 `;

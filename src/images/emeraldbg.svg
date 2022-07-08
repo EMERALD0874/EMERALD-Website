@@ -17,10 +17,10 @@
 		attributeName="points"
 		dur="3s"
 		repeatCount="indefinite"
-		values="141.09,11 94,110 250,384;85,11 13.25,109 250,384;85,11 13.25,109 250,384"
-          calcMode="spline"
-          keySplines="0.1 0.9 0.6 0.98;0.1 0.8 0.9 0.2"
-		  begin="-1.5s"
+		values="85,11 13.25,109 250,384;85,11 13.25,109 250,384;141.09,11 94,110 250,384"
+        calcMode="spline"
+        keySplines="0.1 0.8 0.9 0.2;0.4 0.02 0.9 0.1"
+		begin="-1.5s"
 	/>
 </polyline>
 <polyline class="lines" points="250,11 250,110 250,384 ">
@@ -28,10 +28,10 @@
 		attributeName="points"
 		dur="3s"
 		repeatCount="indefinite"
-		values="250,11 250,110 250,384;141.09,11 94,110 250,384"
-          calcMode="spline"
-          keySplines="0.1 0.8 0.9 0.2"
-		  begin="-1.5s"
+		values="141.09,11 94,110 250,384;250,11 250,110 250,384"
+        calcMode="spline"
+        keySplines="0.1 0.8 0.9 0.2"
+		begin="-1.5s"
 	/>
 </polyline>
 <polyline class="lines" points="361,11 409,110 250,384 ">
@@ -39,21 +39,21 @@
 		attributeName="points"
 		dur="3s"
 		repeatCount="indefinite"
-		values="361,11 409,110 250,384;250,11 250,110 250,384"
-          calcMode="spline"
-          keySplines="0.1 0.8 0.9 0.2"
-		  begin="-1.5s"
+		values="250,11 250,110 250,384;361,11 409,110 250,384"
+        calcMode="spline"
+        keySplines="0.1 0.8 0.9 0.2"
+		begin="-1.5s"
 	/>
 </polyline>
 <polyline class="lines" points="415,11 487,109 250,384 ">
 	<animate
 		attributeName="points"
 		dur="3s"
-		values="415,11 487,109 250,384;415,11 487,109 250,384;361,11 409,110 250,384"
-          calcMode="spline"
-          keySplines="0.1 0.8 0.9 0.2;0.4 0.02 0.9 0.1"
+		values="361,11 409,110 250,384;415,11 487,109 250,384;415,11 487,109 250,384"
+        calcMode="spline"
+        keySplines="0.1 0.9 0.6 0.98;0.1 0.8 0.9 0.2"
 		repeatCount="indefinite"
-		  begin="-1.5s"
+		begin="-1.5s"
 	/>
 </polyline>
 </svg>
