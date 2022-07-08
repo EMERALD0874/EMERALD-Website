@@ -14,8 +14,8 @@ export const Background = styled.div`
   width: 100vw;
   max-width: 100%;
   height: 100vh;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 64px;
+  padding-right: 64px;
   justify-content: center;
   align-items: center;
 `;
@@ -36,10 +36,11 @@ export const EmeraldSvg = styled.div`
 `;
 
 export const IconRow = styled.li`
-  padding-top: 32px;
+  padding-top: 22px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const Icon = styled.a`
@@ -48,20 +49,18 @@ export const Icon = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 10px;
-  height: 100%;
+  padding: 10px 10px;
+  height: 84px;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 
-  :first-of-type {
-    padding-left: 0;
-  }
-
-  :last-of-type {
-    padding-right: 0;
-  }
-
   &:hover {
     color: #c69bff;
+  }
+
+  // make icons smaller at 600px screen width
+  @media screen and (max-width: 600px) {
+    font-size: 32px;
+    height: 52px;
   }
 `;
