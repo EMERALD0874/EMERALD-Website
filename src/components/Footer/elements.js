@@ -18,4 +18,5 @@ export const Decoration = styled.p`
 export const Copyright = styled.p`
   color: #aaa;
   font-size: small;
+  max-width: 800px;
 `;
