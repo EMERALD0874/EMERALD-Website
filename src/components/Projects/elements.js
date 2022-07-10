@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import chroma from "chroma-js";
 
 export const ProjectWrapper = styled.div`
   display: grid;
@@ -56,4 +57,58 @@ export const Column2 = styled.div`
   @media screen and (max-width: 1063px) {
     display: none;
   }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  margin-left: auto;
+  justify-content: left;
+  margin-top: 16px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: left;
+  }
+
+  > * {
+    margin-right: 10px;
+  }
+  > *:last-child {
+    margin-right: 0px;
+  }
+`;
+
+export const ButtonLink = styled.a`
+  border-radius: 50px;
+  background: ${({ color }) => (color ? color : `#000`)};
+  white-space: nowrap;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    background: ${({ color }) => (color ? chroma(color).darken(0.3) : `#000`)};
+  }
+`;
+
+export const DisabledButton = styled.div`
+  border-radius: 50px;
+  background: #222;
+  white-space: nowrap;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 `;

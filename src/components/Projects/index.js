@@ -1,9 +1,12 @@
 import React from "react";
 import {
+  ButtonLink,
+  ButtonWrapper,
   Column1,
   Column2,
   Copyright,
   Description,
+  DisabledButton,
   ProjectRow,
   ProjectWrapper,
   TextWrapper,
@@ -20,6 +23,17 @@ const ProjectData = [
     copyright: `Valorant Strat Roulette was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.`,
     background: "home/ascent.png",
     image: "home/valorant_agents.png",
+    color: "#FA4454",
+    link: "/valorant",
+  },
+  {
+    title: "Team Fortress 2 Strat Roulette",
+    description:
+      "This project is a random strategy generator for Team Fortress 2, a free-to-play first person shooter for PC.",
+    copyright: `Team Fortress 2 is owned by Valve Corporation. Valve Corporation does not endorse or sponsor this project.`,
+    background: "home/process.png",
+    image: "home/tf2_characters.png",
+    color: "#9d5322",
   },
 ];
 
@@ -34,6 +48,8 @@ const Projects = () => {
           background={i.background}
           image={i.image}
           imgLeft={index % 2 === 1}
+          color={i.color}
+          link={i.link}
         />
       ))}
     </>
@@ -47,6 +63,8 @@ const Project = ({
   background,
   image,
   imgLeft,
+  color,
+  link,
 }) => {
   return (
     <div style={{ display: "grid" }}>
@@ -64,7 +82,17 @@ const Project = ({
             <Column1>
               <TextWrapper>
                 <Title>{title}</Title>
-                <Description>{description}</Description>
+                <Description>
+                  {description}
+                  <ButtonWrapper>
+                    {link && (
+                      <ButtonLink href={link} color={color}>
+                        Open
+                      </ButtonLink>
+                    )}
+                    {!link && <DisabledButton>Not Available</DisabledButton>}
+                  </ButtonWrapper>
+                </Description>
                 <Copyright>{copyright}</Copyright>
               </TextWrapper>
             </Column1>
