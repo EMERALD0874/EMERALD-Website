@@ -26,7 +26,7 @@ const splashes = [
 const randomSplash = () =>
   splashes[Math.floor(Math.random() * splashes.length)];
 
-const Footer = () => {
+const Footer = ({ legal }) => {
   const [splash, setSplash] = React.useState();
 
   React.useEffect(() => {
@@ -39,7 +39,9 @@ const Footer = () => {
         <Decoration>
           Made{splash ? ` with ${splash}` : ``} by EMERALD
         </Decoration>
-        <Copyright>© EMERALD, 2022. All rights reserved.</Copyright>
+        <Copyright>
+          © EMERALD, 2022. All rights reserved.{legal ? ` ${legal}` : ``}
+        </Copyright>
       </Container>
     </>
   );

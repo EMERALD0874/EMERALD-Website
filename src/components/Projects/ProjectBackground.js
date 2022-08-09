@@ -12,7 +12,7 @@ const ProjectBackground = (props) => (
               relativePath
               name
               childImageSharp {
-                gatsbyImageData(placeholder: DOMINANT_COLOR)
+                gatsbyImageData(placeholder: BLURRED)
               }
             }
           }
@@ -36,7 +36,7 @@ const ProjectBackground = (props) => (
           layout="fullWidth"
           alt=""
           image={image.node.childImageSharp.gatsbyImageData}
-          formats={["auto", "webp", "avif"]}
+          formats={["webp", "avif"]}
         />
       );
     }}

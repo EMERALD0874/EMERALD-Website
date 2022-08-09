@@ -17,6 +17,16 @@ import ProjectImage from "./ProjectImage";
 
 const ProjectData = [
   {
+    title: "Steam Deck Themes",
+    description:
+      "This is a collection of Steam Deck themes I created to experiment more with CSS. Some of my themes like Obsidian have been used as building blocks for other themes.",
+    copyright: `These Steam Deck Themes are not sponsored, endorsed, licensed by, or affiliated with Steam Deck or Valve Corporation.`,
+    background: "home/galactic.png",
+    image: "home/steam_deck.png",
+    color: "#1a9fff",
+    link: "https://github.com/EMERALD0874/Steam-Deck-Themes",
+  },
+  {
     title: "Valorant Strat Roulette",
     description:
       "This project is a random strategy generator for Valorant, a free-to-play first person shooter for PC. It is intended for use on large screens instead of mobile devices.",
@@ -24,16 +34,6 @@ const ProjectData = [
     background: "home/ascent.png",
     image: "home/valorant_agents.png",
     color: "#FA4454",
-    link: "/valorant",
-  },
-  {
-    title: "Team Fortress 2 Strat Roulette",
-    description:
-      "This project is a random strategy generator for Team Fortress 2, a free-to-play first person shooter for PC.",
-    copyright: `Team Fortress 2 is owned by Valve Corporation. Valve Corporation does not endorse or sponsor this project.`,
-    background: "home/process.png",
-    image: "home/tf2_characters.png",
-    color: "#9d5322",
   },
 ];
 
