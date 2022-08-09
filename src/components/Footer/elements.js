@@ -8,6 +8,8 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   padding: 16px;
+  max-height: 70px;
+  box-shadow: 0 50vh 0 50vh #111;
 `;
 
 export const Decoration = styled.p`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import EmeraldBg from "../../images/emeraldbg.svg";
+import EmeraldSvgFile from "../../images/home/emerald.svg";
 
 export const Background = styled.div`
   // Background by SVGBackgrounds.com
@@ -27,7 +27,7 @@ export const EmeraldWrapper = styled.div`
 
 export const EmeraldSvg = styled.div`
   width: 100%;
-  background-image: url(${EmeraldBg});
+  background-image: url(${EmeraldSvgFile});
   background-size: cover;
   height: 0;
   padding: 0; /* reset */
