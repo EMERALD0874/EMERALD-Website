@@ -1,46 +1,25 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import Image from "next/image";
 
-const ProjectBackground = (props) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        images: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
-          edges {
-            node {
-              relativePath
-              name
-              childImageSharp {
-                gatsbyImageData(placeholder: BLURRED)
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={(data) => {
-      const image = data.images.edges.find((n) => {
-        return n.node.relativePath.includes(props.filename);
-      });
-      if (!image) {
-        return null;
-      }
-
-      return (
-        <GatsbyImage
-          style={{
-            gridArea: "1/1",
-            height: 600,
-          }}
-          layout="fullWidth"
-          alt=""
-          image={image.node.childImageSharp.gatsbyImageData}
-          formats={["webp", "avif"]}
-        />
-      );
-    }}
-  />
-);
+const ProjectBackground = (props) => {
+  return (
+    <div
+      style={{
+        gridArea: "1/1",
+        height: 600,
+        position: "relative",
+        width: "100%",
+      }}
+    >
+      <Image
+        src={`/${props.filename}`}
+        alt=""
+        fill
+        style={{ objectFit: "cover" }}
+        priority
+      />
+    </div>
+  );
+};
 
 export default ProjectBackground;

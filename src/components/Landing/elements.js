@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import EmeraldSvgFile from "../../images/home/emerald.svg";
+
+const EmeraldSvgFile = "/home/emerald.svg";
 
 export const Background = styled.div`
   // Background by SVGBackgrounds.com

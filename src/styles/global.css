@@ -8,7 +8,7 @@
 /* Ensure the root and body fill the viewport so children can use 100vh/min-height:100vh reliably */
 html,
 body,
-#___gatsby {
+#__next {
   height: 100%;
 }
 
