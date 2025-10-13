@@ -42,6 +42,7 @@ const Projects = () => {
     <>
       {ProjectData.map((i, index) => (
         <Project
+          key={index}
           title={i.title}
           description={i.description}
           copyright={i.copyright}

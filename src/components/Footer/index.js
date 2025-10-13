@@ -12,7 +12,7 @@ const splashes = [
   "two dollars to his name",
   "🤬",
   "a lot of curse words in the comments",
-  "Gatsby",
+  "Next.js",
   "a severe lack of time management",
   "2 AM gaming sessions",
   "much sarcasm",
