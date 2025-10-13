@@ -7,10 +7,10 @@ import "./style.css";
 
 const IndexPage = () => {
   return (
-    <div style={{ backgroundColor: "#000" }}>
+    <div className="page-root" style={{ backgroundColor: "#000" }}>
       <HelmetComponent />
       <Landing />
-      <Projects />
+      {/* <Projects /> */}
       <Footer />
     </div>
   );

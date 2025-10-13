@@ -5,6 +5,24 @@
   padding: 0;
 }
 
+/* Ensure the root and body fill the viewport so children can use 100vh/min-height:100vh reliably */
+html,
+body,
+#___gatsby {
+  height: 100%;
+}
+
+.page-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport */
+}
+
+/* make sure any direct child (like Landing) can grow to fill available space before footer */
+.page-root > *:first-child {
+  flex: 1 1 auto;
+}
+
 ::-webkit-scrollbar {
   width: 1em;
 }

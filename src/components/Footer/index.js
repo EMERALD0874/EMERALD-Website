@@ -19,8 +19,15 @@ const splashes = [
   "a TLD his parents will hate",
   "a sheep who runs a server farm",
   "a really cool duck",
-  "a pie addict",
   "an alcoholic bear",
+  "zero cocktails, to his friend's disappointment,",
+  "a fennec who loves Pokémon cards",
+  "a strange dissatisfaction with October 4",
+  "someone really bad at Mortal Kombat",
+  "an espresso or two",
+  "someone with a more optimized website",
+  "a █████ ██ ████████",
+  "a diving bird",
 ];
 
 const randomSplash = () =>
